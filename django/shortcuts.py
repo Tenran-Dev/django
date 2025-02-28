@@ -52,7 +52,9 @@ def redirect(to, *args, permanent=False, preserve_request=False, **kwargs):
         preserve_request=preserve_request,
     )
 
-
+def make_toast():
+    return "toast"
+    
 def _get_queryset(klass):
     """
     Return a QuerySet or a Manager.
